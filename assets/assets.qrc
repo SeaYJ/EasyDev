@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Font Awesome 6 Free Solid.ttf</file>
+        <file>fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf</file>
+        <file>fonts/HarmonyOS_Sans_SC/LICENSE.txt</file>
+        <file>fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf</file>
+        <file>svg/FluentDismiss24Regular.svg</file>
+        <file>svg/FluentMaximize24Regular.svg</file>
+        <file>svg/FluentMinimize24Regular.svg</file>
+        <file>svg/FluentSquareMultiple24Regular.svg</file>
+        <file>imgs/EasyDev.png</file>
+        <file>imgs/ED.png</file>
+        <file>svg/sidebarMenu/0/Audio.svg</file>
+        <file>svg/sidebarMenu/0/Converters.svg</file>
+        <file>svg/sidebarMenu/0/Image.svg</file>
+        <file>svg/sidebarMenu/0/NumberBase.svg</file>
+        <file>svg/sidebarMenu/0/Timestamp.svg</file>
+        <file>svg/sidebarMenu/0/Video.svg</file>
+        <file>svg/sidebarMenu/1/Base64Image.svg</file>
+        <file>svg/sidebarMenu/1/Base64Text.svg</file>
+        <file>svg/sidebarMenu/1/Encoders-Decoders.svg</file>
+        <file>svg/sidebarMenu/1/HTML.svg</file>
+        <file>svg/sidebarMenu/1/URL.svg</file>
+        <file>svg/sidebarMenu/2/CPP.svg</file>
+        <file>svg/sidebarMenu/2/Formatter.svg</file>
+        <file>svg/sidebarMenu/2/JSON.svg</file>
+        <file>svg/sidebarMenu/2/SQL.svg</file>
+        <file>svg/sidebarMenu/2/XML.svg</file>
+        <file>svg/sidebarMenu/3/Generators.svg</file>
+        <file>svg/sidebarMenu/3/LoremIpsum.svg</file>
+        <file>svg/sidebarMenu/4/Markdown.svg</file>
+        <file>svg/sidebarMenu/4/Text.svg</file>
+        <file>svg/sidebarMenu/5/ColorPicker.svg</file>
+        <file>svg/sidebarMenu/5/Graphic.svg</file>
+        <file>svg/sidebarMenu/Settings.svg</file>
+    </qresource>
+</RCC>

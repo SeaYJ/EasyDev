@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EasyDev</class>
+ <widget class="QMainWindow" name="EasyDev">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>761</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EasyDev</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+	
+	background-color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="WindowTitleBar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#WindowTitleBar {
+	border-bottom: 1px solid  #f1f2f3;
+	background-color: #ffffff;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="LogoAndTitle" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Logo">
+            <property name="minimumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="TitleBarHSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="WindowBtn" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>138</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>138</width>
+           <height>52</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="WindowBtnLeftBorder">
+            <property name="minimumSize">
+             <size>
+              <width>2</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>2</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#WindowBtnLeftBorder {
+	border-radius: 1px;
+	background-color: #e3e5e7;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnMin">
+            <property name="minimumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#BtnMin {
+	color: #61666d;
+	border-radius: 4px;
+}
+#BtnMin::hover {
+	background-color: #e3e5e7;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnMax">
+            <property name="minimumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#BtnMax {
+	color: #61666d;
+	border-radius: 4px;
+}
+
+#BtnMax::hover {
+	background-color: #e3e5e7;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnClose">
+            <property name="minimumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#BtnClose {
+	color: #61666d;
+	border-radius: 4px;
+}
+
+#BtnClose::hover {
+	background-color: #e3e5e7;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="MainBody" native="true">
+      <property name="styleSheet">
+       <string notr="true">#MainBody {
+	background-color: #ffffff;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="SidebarMenuFrame" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#SidebarMenuFrame {
+	background-color: #ffffff;
+	border-right: 1px solid #e3e5e7;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="VLayout0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTreeWidget" name="SidebarMenu">
+            <property name="minimumSize">
+             <size>
+              <width>299</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>299</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#SidebarMenu {
+	border: none;
+	padding: 5px;
+	background-color: #00ffffff;
+}
+#SidebarMenu::item {
+	color: #303133;
+	height: 32px;
+	border-radius: 8px;
+	background-color: #00f3f3f3;
+	padding-left: 10px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+#SidebarMenu::item:!has-children {
+	padding-left: 30px;
+}
+
+#SidebarMenu::item:hover {
+	background-color: #e3e5e7;
+}
+#SidebarMenu::item:selected {
+	background-color: #f1f2f3;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="indentation">
+             <number>0</number>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="animated">
+             <bool>true</bool>
+            </property>
+            <property name="headerHidden">
+             <bool>true</bool>
+            </property>
+            <property name="expandsOnDoubleClick">
+             <bool>false</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>Sidebar Multi-level Menu</string>
+             </property>
+            </column>
+            <item>
+             <property name="text">
+              <string>Converters</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/0/Converters.svg</normaloff>:/svg/sidebarMenu/0/Converters.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>Number Base</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/0/NumberBase.svg</normaloff>:/svg/sidebarMenu/0/NumberBase.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Timestamp</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/0/Timestamp.svg</normaloff>:/svg/sidebarMenu/0/Timestamp.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Image</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/0/Image.svg</normaloff>:/svg/sidebarMenu/0/Image.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Video</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/0/Video.svg</normaloff>:/svg/sidebarMenu/0/Video.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Audio</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/0/Audio.svg</normaloff>:/svg/sidebarMenu/0/Audio.svg</iconset>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Encoders/Decoders</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/1/Encoders-Decoders.svg</normaloff>:/svg/sidebarMenu/1/Encoders-Decoders.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>URL</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/1/URL.svg</normaloff>:/svg/sidebarMenu/1/URL.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>HTML</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/1/HTML.svg</normaloff>:/svg/sidebarMenu/1/HTML.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Base64 Text</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/1/Base64Text.svg</normaloff>:/svg/sidebarMenu/1/Base64Text.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Base64 Image</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/1/Base64Image.svg</normaloff>:/svg/sidebarMenu/1/Base64Image.svg</iconset>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Formatters</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/2/Formatter.svg</normaloff>:/svg/sidebarMenu/2/Formatter.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>JSON</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/2/JSON.svg</normaloff>:/svg/sidebarMenu/2/JSON.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SQL</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/2/SQL.svg</normaloff>:/svg/sidebarMenu/2/SQL.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>C++</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/2/CPP.svg</normaloff>:/svg/sidebarMenu/2/CPP.svg</iconset>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XML</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/2/XML.svg</normaloff>:/svg/sidebarMenu/2/XML.svg</iconset>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Generators</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/3/Generators.svg</normaloff>:/svg/sidebarMenu/3/Generators.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>Lorem Ipsum</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/3/LoremIpsum.svg</normaloff>:/svg/sidebarMenu/3/LoremIpsum.svg</iconset>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Text</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/4/Text.svg</normaloff>:/svg/sidebarMenu/4/Text.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>Markdown Preview</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/4/Markdown.svg</normaloff>:/svg/sidebarMenu/4/Markdown.svg</iconset>
+              </property>
+             </item>
+            </item>
+            <item>
+             <property name="text">
+              <string>Graphic</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../assets/assets.qrc">
+               <normaloff>:/svg/sidebarMenu/5/Graphic.svg</normaloff>:/svg/sidebarMenu/5/Graphic.svg</iconset>
+             </property>
+             <item>
+              <property name="text">
+               <string>Color Picker &amp; Contrast</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/assets.qrc">
+                <normaloff>:/svg/sidebarMenu/5/ColorPicker.svg</normaloff>:/svg/sidebarMenu/5/ColorPicker.svg</iconset>
+              </property>
+             </item>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="SidebarMenuSeparator">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>1</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>1</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#SidebarMenuSeparator {
+	background-color: #e3e5e7;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SettingsBtn">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#SettingsBtn {
+	color: #303133;
+	height: 32px;
+	border-radius: 8px;
+	background-color: #00ffffff;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	text-align: left;
+}
+#SettingsBtn:hover {
+	background-color: #e3e5e7;
+}
+#SettingsBtn:pressed {
+	background-color: #f1f2f3;
+}</string>
+            </property>
+            <property name="text">
+             <string>Settings</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../assets/assets.qrc">
+              <normaloff>:/svg/sidebarMenu/Settings.svg</normaloff>:/svg/sidebarMenu/Settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="MenuItemPagesScrollArea">
+         <property name="styleSheet">
+          <string notr="true">#MenuItemPagesScrollArea {
+	border: none;
+}</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="MenuItemPagesScrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>700</width>
+            <height>690</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#MenuItemPagesScrollAreaWidgetContents {
+	background-color: #ffffff;
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="MenuItemPageTitle">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>64</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>64</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>28</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#MenuItemPageTitle {
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background-color: #ffffff;
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QStackedWidget" name="MenuItemPages">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#MenuItemPages {
+	background-color: #ffffff;
+}</string>
+             </property>
+             <property name="currentIndex">
+              <number>14</number>
+             </property>
+             <widget class="QWidget" name="SettingsPage"/>
+             <widget class="QWidget" name="NumberBasePage"/>
+             <widget class="QWidget" name="TimestampPage"/>
+             <widget class="QWidget" name="ImageConverterPage"/>
+             <widget class="QWidget" name="VideoConverterPage"/>
+             <widget class="QWidget" name="AudioConverterPage"/>
+             <widget class="QWidget" name="EDCoderURLPage"/>
+             <widget class="QWidget" name="EDCoderHTMLPage"/>
+             <widget class="QWidget" name="Base64TextPage"/>
+             <widget class="QWidget" name="Base64ImagePage"/>
+             <widget class="QWidget" name="FormatterJSONPage"/>
+             <widget class="QWidget" name="FormatterSQLPage"/>
+             <widget class="QWidget" name="FormatterCPPPage"/>
+             <widget class="QWidget" name="FormatterXMLPage"/>
+             <widget class="QWidget" name="LoremIpsumPage"/>
+             <widget class="QWidget" name="MarkdownPreviewPage"/>
+             <widget class="QWidget" name="ColorPickerContrastPage"/>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+      <zorder>MenuItemPagesScrollArea</zorder>
+      <zorder>SidebarMenuFrame</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../assets/assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
